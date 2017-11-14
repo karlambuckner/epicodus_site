@@ -1,0 +1,11 @@
+<h1><%= @course.name %></h1>
+
+<ul>
+  <% @course.chapters.each do |chapter| %>
+    <li>
+      <%= link_to chapter.name, chapter_path(chapter) %>
+    </li>
+ <% end %>
+</ul>
+
+<p><%= link_to "Return to courses", courses_path %></p>
