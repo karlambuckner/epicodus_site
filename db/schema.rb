@@ -27,6 +27,8 @@ ActiveRecord::Schema.define(version: 20171114170223) do
   create_table "lessons", force: :cascade do |t|
     t.string "name"
     t.integer "chapter_id"
+    t.integer "course_id"
+    t.text "body"
   end
 
 end

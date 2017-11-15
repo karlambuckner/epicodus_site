@@ -1,0 +1,9 @@
+<h1><%= @chapter.name %></h1>
+
+<ul>
+  <% @chapter.lessons.each do |lesson| %>
+    <li>
+      <%= link_to lesson.name, chapter_lesson_path(lesson) %>
+    </li>
+ <% end %>
+</ul>
